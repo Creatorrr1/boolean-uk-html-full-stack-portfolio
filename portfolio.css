@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  /* Header */
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  
+    padding: 30px 20px;
+    border-top: 10px solid burlywood;
+  
+    background-color: #24292e;
+  }
+  
+  header .name {
+    color: white;
+  }
+  
+  header .navigation {
+    align-self: center;
+    justify-self: right;
+  }
+  
+  header .navigation a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    color: #24292e;
+  
+    border-radius: 5px;
+  
+    background-color: burlywood;
+    width: 90px;
+    padding: 10px;
+    margin-left: 30px;
+  }
+  
+  header .navigation a:hover {
+    background-color: burlywood;
+  }
+  
+  /* Cover Section */
+  .cover-container {
+    display: grid;
+    grid-template-areas: ". cover-content .";
+    grid-template-columns: 1fr 600px 1fr;
+  
+    background-color: #24292e;
+    border-bottom: 10px solid burlywood;
+  }
+  
+  .cover-container .cover-content {
+    grid-area: cover-content;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  
+    color: white;
+  }
+  
+  .cover-container .cover-content h2 {
+    font-size: 5rem;
+    text-align: left;
+  
+    margin-bottom: 20px;
+  }
+  
+  .cover-container .cover-content p {
+    font-size: 1.3rem;
+    font-weight: 500;
+  
+    line-height: 1.8;
+  }
+  
+  .cover-container .cover-content strong {
+    color: burlywood;
+  }
+  
+  .cover-container .cover-content em {
+    text-decoration: underline;
+    text-decoration-color: burlywood;
+  }
+  
+  /* About Me */
+  .about-me {
+    display: grid;
+    grid-template-areas: ". about-me-content .";
+    grid-template-columns: 1fr 72ch 1fr;
+  
+    background-color: #f3efdd;
+  }
+  
+  .about-me .about-me-content {
+    grid-area: about-me-content;
+  
+    margin: 50px 0px;
+  
+    color: #24292e;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  .about-me .about-me-content h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .about-me .about-me-content h4 {
+    margin-top: 30px;
+  }
+  
+  .about-me .about-me-content p,
+  .about-me .about-me-content ul {
+    line-height: 1.5;
+  
+    margin-top: 10px;
+  }
+  
+  .about-me .about-me-content ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    margin-left: 40px;
+  }
